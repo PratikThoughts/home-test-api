@@ -8,7 +8,6 @@ Feature: Inventory API Tests
     Then status 200
     And match each response.data == {id : '#notnull', name : '#notnull', image: '#notnull', price :'#notnull'}
     And assert response.data.length >= 9
-    And print  response
 
     Scenario: Filter by id
     Given path '/api/inventory/filter'
