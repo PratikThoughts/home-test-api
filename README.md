@@ -1,10 +1,10 @@
 # Project Title
 
-Take Home API Test.
+Playwright UI Automation Test
 
 ## Description
 
-This repository contains the automation test suite developed for the App Automation Test assignment.
+This repository contains the automation test suite developed for the App UI Automation Test assignment.
 
 ## Getting Started
 
