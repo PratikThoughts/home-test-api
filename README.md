@@ -1,57 +1,82 @@
-# Project Title
+# Home Test API Automation
 
-Playwright UI Automation Test
+This repository contains an **API automation test suite** built using **Java** and **Karate Framework**.  
 
-## Description
+---
 
-This repository contains the automation test suite developed for the App UI Automation Test assignment.
+## 📌 Repository Location
 
-## Getting Started
+GitHub Repo:  
+https://github.com/PratikThoughts/home-test-api.git
 
-### Tech Stack
+---
 
-* Playwright
-* Typescript
+## 🚀 Tech Stack
 
-### Supported Browsers
+### Languages & Frameworks
+- **Java (JDK 8+)**
+- **Karate Framework**
+- **Cucumber-style BDD**
+- **JUnit 5**
 
-* Chrome
-* Firefox
-* Edge
-* WebKit (Playwright)
+### Build & Dependency Management
+- **Maven**
 
-### Installation
-* Node installation
-	* Check node version using below command,  If it is not installed then download installer file from official file and install it.
-  ```
-	node -v
-  ```
- 	*  Check node version again to check node successfully installed or not.
-* Playwright installation :
-	* Create folder in C drive "PlaywrightTestAutomation" with this name.
-  * Open git bash at this path and clone the repo.
+---
+
+## 📁 Project Structure
+	
+	KarateTest/
+	├── .git
+	├── src
+	│ ├── test
+	│ │ ├── java
+	│ │ │ └── homeApiTest
+	│ │ │			└── karatetest/
+	│ │ │ └── karate-config.js
+	│ │ │ ├── logback-test
+	├── pom.xml
+	├── target/
+	├── README.md
+	```
+
+
+
+## 🧰 Prerequisites
+
+Ensure you have the following installed:
+
+1. **Java JDK 8 or above**
+   ```
+   java -version
+   ```
+2. **Java JDK 8 or above**
+   	```
+    mvn -version
     ```
-    git clone https://github.com/automationapptest/home-test.git
-    ```
-  * Install project dependencies
-    ```
-    npm install
-    ```
-  * Install Playwright browsers
-    ```
-    npx playwright install
-    ```
+    
+## 📥 Clone the Repository
+	
+	git clone https://github.com/PratikThoughts/home-test-api.git
+	cd C:\KarateTest\hometest
+	
+## 📦 Install Dependencies
+	
+	mvn clean install
+	
+## ▶️ Running Tests
+1. Run all Karate tests
+   ```
+   mvn test
+   ```
+2. Run a specific feature file using specific test runner
+   ```
+   mvn test -Dtest=UsersRunnerIndividual
+   ```
+   
+## 📊 Test Reports
+	
+	target/karate-reports/
+	target/surefire-reports/
+	
 
-### Execution Program
-
-* There are 2 Ways to run playwrigh test cases.
-	* First : Open CMD at "C:\PlaywrightTestAutomation" and run below command to run all test cases.
-	  ```
-	  npx playwright test
-	  ```
-* Second : Download Playwright test runner extension on VS code and using that play button we can we whole file or test case by test case.
-
-## Version History
-
-* 1.0.0
-    * Initial Release
