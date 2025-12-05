@@ -65,7 +65,6 @@ Ensure you have the following installed:
 ## 📥 Clone the Repository
 	
 	git clone https://github.com/PratikThoughts/home-test-api.git
-	cd C:\KarateTest\hometest
 	
 ## 📦 Install Dependencies
 	
