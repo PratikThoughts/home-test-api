@@ -1,4 +1,4 @@
-Feature: Get all menu items
+Feature: Retrieve and verify all inventory items
 
     Background: 
     * url baseUrl
