@@ -63,12 +63,13 @@ Ensure you have the following installed:
     ```
     
 ## 📥 Clone the Repository
-	Create folder with 'KarateTest' this name in C drive
-	Clone repo using below command
+1. Create folder with 'KarateTest' this name in C drive
+2. Clone repo using below command
+	
 	```
 	git clone https://github.com/PratikThoughts/home-test-api.git
 	```
-	From 'homeApiTest' path execute the tets cases.
+3. Execute the test cases from 'homeApiTest' folder path.
 	
 ## 📦 Install Dependencies
 	
