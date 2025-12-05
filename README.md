@@ -71,7 +71,7 @@ Ensure you have the following installed:
    ```
 2. Run a specific feature file using specific test runner
    ```
-   mvn test -Dtest=UsersRunnerIndividual
+   mvn test -Dtest=TestRunner_Inventory
    ```
    
 ## 📊 Test Reports

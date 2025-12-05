@@ -1,0 +1,10 @@
+{
+    "validJson": {
+        "id": "3",
+        "name": "Hawaiian",
+        "image": "hawaiian.png",
+        "price": "$14"
+    },
+    "filterID": 3,
+    "expectedFilterName": "Baked Rolls x 8"
+}
