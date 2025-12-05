@@ -2,7 +2,6 @@ Feature: Get all menu items
 
   Background: 
     * def testData = read('classpath:homeApiTest/inventory/data/inventory-testdata.json')
-    * def commonData = call read('classpath:homeApiTest/inventory/common/InventoryCommon.feature')
     * url baseUrl
    
   Scenario: Get all inventory items successfully

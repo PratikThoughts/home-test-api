@@ -32,7 +32,14 @@ https://github.com/PratikThoughts/home-test-api.git
 	│ ├── test
 	│ │ ├── java
 	│ │ │ └── homeApiTest
-	│ │ │			└── karatetest/
+	│ │ │			└── inventory/
+							└── common/ 
+									└── CommonPost.feature 	# Reusable feature for common POST request logic 
+							└── data/						# Test data files (JSON payloads, inputs, etc.)
+							└── AddItem.feature				# Tests adding new items to the inventory
+							└── GetInventory.feature		# Tests fetching the list of inventory items
+							└── ValidateItems.feature		# Tests validates inventory items
+							└── InventoryRunner.java		# Karate JUnit runner for executing inventory tests
 	│ │ │ └── karate-config.js
 	│ │ │ ├── logback-test
 	├── pom.xml
@@ -71,7 +78,7 @@ Ensure you have the following installed:
    ```
 2. Run a specific feature file using specific test runner
    ```
-   mvn test -Dtest=TestRunner_Inventory
+   mvn test -Dtest=InventoryRunner
    ```
    
 ## 📊 Test Reports

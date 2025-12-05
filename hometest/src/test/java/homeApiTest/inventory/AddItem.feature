@@ -2,7 +2,6 @@ Feature: Add inventory item
 
   Background: 
     * def testData = read('classpath:homeApiTest/inventory/data/inventory-testdata.json')
-    * def commonData = call read('classpath:homeApiTest/inventory/common/InventoryCommon.feature')
     * url baseUrl
     * def requestBody = testData.validJson
 
@@ -21,18 +20,18 @@ Feature: Add inventory item
     When method post
     Then status 200
 
-    Scenario: Add item with existing ID should fail
-      Given path 'api/inventory/add'
-      And request requestBody
-      When method post
-      Then status 400
-      And match response == "Bad Request"
+  Scenario: Add item with existing ID should fail
+    Given path 'api/inventory/add'
+    And request requestBody
+    When method post
+    Then status 400
+    And match response == "Bad Request"
 
-    Scenario: Add item missing required fields should fail
-      * def body = { name: "Hawaiian", image: "hawaiian.png", price: "$14" }
-      And path 'api/inventory/add'
-      And request body
-      When method post
-      Then status 400
-      And match response == "Not all requirements are met"
+  Scenario: Add item missing required fields should fail
+    * def body = { name: "Hawaiian", image: "hawaiian.png", price: "$14" }
+    And path 'api/inventory/add'
+    And request body
+    When method post
+    Then status 400
+    And match response == "Not all requirements are met"
   
