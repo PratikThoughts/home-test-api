@@ -63,8 +63,8 @@ Ensure you have the following installed:
     ```
     
 ## 📥 Clone the Repository
-1. Create folder with 'KarateTest' this name in C drive
-2. Clone repo using below command
+1. Create a folder with  this name 'KarateTest' in C drive.
+2. Clone the git repo using below command.
 	
 	```
 	git clone https://github.com/PratikThoughts/home-test-api.git
