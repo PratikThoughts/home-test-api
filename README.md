@@ -34,7 +34,7 @@ https://github.com/PratikThoughts/home-test-api.git
 	│ │ │ └── homeApiTest
 	│ │ │			└── inventory/
 							└── common/ 
-									└── CommonPost.feature 	# Reusable feature for common POST request logic 
+									└── CreateInventory.feature 	# Reusable feature for common POST request logic 
 							└── data/						# Test data files (JSON payloads, inputs, etc.)
 							└── AddItem.feature				# Tests adding new items to the inventory
 							└── GetInventory.feature		# Tests fetching the list of inventory items

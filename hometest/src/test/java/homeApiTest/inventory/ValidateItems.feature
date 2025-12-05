@@ -9,8 +9,8 @@ Feature: Get all menu items
     * def newID = (lengthOfResponse + 1).toString()
     * karate.log('New ID to be added:', newID)
     * def payload = { id: '#(newID)', name: 'TestName', image: 'TestImage.png', price: '$111' }
-    * karate.log('Calling post method from CommonPost.feature file for : ', payload)
-    * def result = call read('classpath:homeApiTest/inventory/common/CommonPost.feature'){payload: #(payload)}
+    * karate.log('Calling post method from CreateInventory.feature file for : ', payload)
+    * def result = call read('classpath:homeApiTest/inventory/common/CreateInventory.feature'){payload: #(payload)}
 
     Given path 'api/inventory'
     When method get
